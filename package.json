@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/arvidbild/TwitterInterface#readme",
   "dependencies": {
-    "pug": "^2.0.0-beta11"
+    "express": "^4.14.1",
+    "pug": "^2.0.0-beta11",
+    "twit": "^2.2.5"
   }
 }
