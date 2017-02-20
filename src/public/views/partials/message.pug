@@ -1,0 +1,15 @@
+.grid-33
+    .app--section
+        ul.app--message--list
+                li
+                    h3 
+                        | Conversation with 
+                        a #{object.direct_messages[0].sender.name}
+                ul.app--message--conversation
+                    each val in object.direct_messages
+                        li.app--message
+                            .app--avatar(style='background-image: url(' + val.sender.profile_image_url + ')') 
+                            |                 
+                            p.app--message--text #{val.text} 
+                            |                  
+                            p.app--message--timestamp #{val.created_at}
